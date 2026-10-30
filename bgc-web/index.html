@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borneo Gaming Community | Portal Berita & Esports</title>
+    
+    <!-- Font Oswald & Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgcDark: '#0b0b0b',
+                        bgcCard: '#111111',
+                        bgcRed: '#b81212',
+                        bgcGold: '#ffd700'
+                    },
+                    fontFamily: {
+                        oswald: ['Oswald', 'sans-serif'],
+                        roboto: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bgcDark text-white font-roboto selection:bg-bgcRed selection:text-white">
+
+    <!-- Navigasi Utama -->
+    <nav class="border-b border-bgcRed/30 bg-black/80 backdrop-blur-md fixed w-full z-50 top-0">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="font-oswald text-2xl font-bold tracking-wider">
+                <span class="text-bgcRed">BGC</span> <span class="text-white">ESPORTS</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-bold text-sm tracking-wide">
+                <a href="#" class="text-bgcRed transition">BERITA UTAMA</a>
+                <a href="#" class="hover:text-bgcRed transition">TURNAMEN</a>
+                <a href="#" class="hover:text-bgcRed transition">KLASEMEN</a>
+                <a href="#" class="hover:text-bgcRed transition">TENTANG KAMI</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Konten Utama (News & Event) -->
+    <main class="pt-28 pb-12 px-4 max-w-6xl mx-auto">
+        
+        <h2 class="font-oswald text-3xl font-bold mb-6 border-l-4 border-bgcRed pl-3 uppercase">Highlight Event</h2>
+        
+        <!-- Kartu Berita / Event HUT Dahau -->
+        <article class="bg-bgcCard border border-gray-800 rounded-xl overflow-hidden hover:border-bgcRed transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_8px_30px_rgba(184,18,18,0.15)] flex flex-col md:flex-row group">
+            <div class="md:w-2/5 h-64 md:h-auto bg-gray-900 relative">
+                <!-- Placeholder untuk Gambar Poster -->
+                <div class="absolute inset-0 flex items-center justify-center text-gray-700 font-bold">
+                    [Area Poster Event]
+                </div>
+                <span class="absolute top-4 left-4 bg-bgcRed text-white px-3 py-1 text-xs font-bold font-oswald rounded tracking-wide">PENDAFTARAN DIBUKA</span>
+            </div>
+            
+            <div class="md:w-3/5 p-8 flex flex-col justify-center relative overflow-hidden">
+                <!-- Efek Glow Latar Belakang -->
+                <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-bgcRed/10 rounded-full blur-3xl group-hover:bg-bgcRed/20 transition-all duration-500"></div>
+                
+                <div class="text-gray-400 text-sm font-bold mb-2">30 OKTOBER 2026</div>
+                <h3 class="font-oswald text-3xl md:text-4xl font-bold mb-3 uppercase leading-tight">HUT Dahau Kubar Esport Competition</h3>
+                <p class="text-gray-400 mb-2 leading-relaxed">IESPA Kutai Barat membuka pendaftaran turnamen MLBB dan Free Fire. Siapkan tim terbaikmu untuk bertanding di Z'DAN COFFE.</p>
+                <p class="font-oswald text-2xl text-bgcGold mb-6 drop-shadow-md">PRIZEPOOL: IDR 12.000.000</p>
+                
+                <div class="flex gap-4">
+                    <a href="https://wa.me/6282383750331" target="_blank" class="bg-bgcRed hover:bg-red-800 text-white font-oswald px-6 py-2.5 rounded font-bold tracking-wider transition text-center text-sm md:text-base">DAFTAR MLBB</a>
+                    <a href="https://wa.me/628135659595" target="_blank" class="bg-[#e58e00] hover:bg-[#cc7a00] text-white font-oswald px-6 py-2.5 rounded font-bold tracking-wider transition text-center text-sm md:text-base">DAFTAR FF</a>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+</body>
+</html>
